@@ -1,0 +1,33 @@
+O REI DOS SITES — Página de Vendas (Herbert Carnaúba)
+=====================================================
+
+ESTRUTURA
+  index.html          → estrutura da página
+  css/style.css       → todo o visual (dark + azul, efeitos 3D/LED, responsivo)
+  js/main.js          → menu mobile, scroll reveal, tilt 3D, marquee
+  js/animations.js    → animações anime.js (títulos)
+  img/herbert.jpg     → foto do Herbert (SUBSTITUA por uma foto real)
+
+COMO ABRIR / HOSPEDAR
+  Abra o index.html no navegador ou hospede a pasta inteira (Vercel,
+  Netlify, Hostinger, etc.). As animações usam anime.js via CDN (internet).
+  Ao atualizar no host, dê "hard refresh" (Ctrl+Shift+R) para limpar cache.
+
+O QUE VOCÊ PODE AJUSTAR (procure por "PLACEHOLDER" no index.html)
+  1. PREÇO → seção "OFERTA": está "de R$ 2.633 por R$ 197,00". O valor de
+     R$2.633 é a soma dos módulos avulsos (Figma 419 + WordPress 719 +
+     Vendas 319 + Programação 319 + HTML/CSS/JS 349 + GitHub 219 + React 289).
+     Ajuste o preço final conforme sua oferta real.
+  2. LINK DE COMPRA → todos os botões já apontam para
+     https://www.herbertcarnauba.com.br/curso  (troque se tiver checkout).
+  3. FOTO → substitua img/herbert.jpg (mesma pasta, mesmo nome), de
+     preferência quadrada (ex.: 800x800).
+
+CONTEÚDO
+  Baseado nas informações do site oficial: 7 módulos (Figma, WordPress,
+  Estratégias de Venda, Programação do Zero ao Pro, HTML/CSS/JS, GitHub,
+  React), garantia de 7 dias, acesso vitalício, pagamento por cartão,
+  débito ou PIX.
+
+RESPONSIVO
+  Funciona em celular e computador (menu vira "hambúrguer" no mobile).

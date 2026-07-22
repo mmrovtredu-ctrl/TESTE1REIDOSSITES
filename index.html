@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Rei dos Sites — Crie sites e mude de vida | Herbert Carnaúba</title>
+  <meta name="description" content="Curso O Rei dos Sites, com Herbert Carnaúba: aprenda a criar sites do zero (Figma, WordPress, HTML, CSS, JavaScript, React, GitHub) e a vender, trabalhando de casa." />
+  <meta name="theme-color" content="#070b16" />
+
+  <!-- fail-safe: só ativa as animações de entrada se o JS estiver rodando. -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Orbitron:wght@600;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="bg-fx" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="scanline"></div>
+  </div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#topo" class="brand" aria-label="O Rei dos Sites - início">
+        <span class="brand__mark brand__mark--crown">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3 8l4 4 5-7 5 7 4-4-1.5 11h-15L3 8Z"/>
+            <rect x="6" y="20" width="12" height="2.4" rx="1"/>
+          </svg>
+        </span>
+        <span class="brand__text">O REI<span class="brand__accent">DOS</span>SITES</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#curso">O curso</a>
+        <a href="#aprender">O que você aprende</a>
+        <a href="#instrutor">Instrutor</a>
+        <a href="#oferta">Oferta</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://www.herbertcarnauba.com.br/curso" class="btn btn--sm btn--primary nav__cta" target="_blank" rel="noopener">Quero entrar</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="topo">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="pill reveal">
+            <span class="pill__dot"></span> Curso online • do zero ao profissional
+          </span>
+
+          <h1 class="hero__title">O REI DOS SITES</h1>
+
+          <p class="hero__sub reveal">
+            Aprenda a <strong>criar sites do zero</strong> e a transformar isso em
+            renda trabalhando de casa. Do Figma ao React, da primeira linha de
+            código ao cliente pagando: o caminho completo para
+            <strong>mudar de vida com sites</strong>.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a href="https://www.herbertcarnauba.com.br/curso" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+              Quero mudar de vida
+              <span class="btn__glow"></span>
+            </a>
+            <a href="#curso" class="btn btn--ghost btn--lg">Ver o conteúdo</a>
+          </div>
+
+          <ul class="hero__proof reveal">
+            <li><b>7</b> módulos completos</li>
+            <li><b>R$10mil+</b> potencial por mês</li>
+            <li><b>Vitalício</b> acesso ao conteúdo</li>
+          </ul>
+        </div>
+
+        <!-- Cena animada: um site sendo criado (SVG) -->
+        <div class="hero__visual reveal" id="heroVisual">
+          <div class="hero__card-glow"></div>
+          <div class="tilt" data-tilt>
+            <svg class="dev-scene" viewBox="0 0 560 430" role="img"
+                 aria-label="Ilustração de um site sendo criado no computador">
+              <defs>
+                <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#46a2ff"/><stop offset="1" stop-color="#1b52c9"/>
+                </linearGradient>
+                <linearGradient id="gCyan" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#37e6ff"/><stop offset="1" stop-color="#2f7bff"/>
+                </linearGradient>
+                <linearGradient id="gScreen" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#0e1830"/><stop offset="1" stop-color="#0a1226"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="280" cy="400" rx="210" ry="18" fill="rgba(47,123,255,.10)"/>
+              <g class="scene-monitor">
+                <rect x="105" y="46" width="350" height="248" rx="16" fill="url(#gScreen)" stroke="rgba(120,160,255,.35)" stroke-width="2"/>
+                <rect x="105" y="46" width="350" height="34" rx="16" fill="#0c1428"/>
+                <rect x="105" y="64" width="350" height="16" fill="#0c1428"/>
+                <circle cx="127" cy="63" r="4.5" fill="#ff5f57"/>
+                <circle cx="143" cy="63" r="4.5" fill="#febc2e"/>
+                <circle cx="159" cy="63" r="4.5" fill="#28c840"/>
+                <rect x="188" y="55" width="250" height="16" rx="8" fill="#111c36"/>
+                <text x="204" y="67" class="scene-url">herbertcarnauba.com.br</text>
+                <rect class="bld b1" x="128" y="100" width="140" height="16" rx="4" fill="url(#gCyan)"/>
+                <rect class="bld b2" x="128" y="128" width="304" height="48" rx="8" fill="rgba(47,123,255,.20)" stroke="rgba(120,160,255,.35)"/>
+                <rect class="bld b6" x="360" y="134" width="60" height="34" rx="17" fill="url(#gBlue)"/>
+                <rect class="bld b3" x="128" y="190" width="92" height="76" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
+                <rect class="bld b4" x="234" y="190" width="92" height="76" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
+                <rect class="bld b5" x="340" y="190" width="92" height="76" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
+                <g class="scene-cursor">
+                  <path d="M0 0 L0 16 L4 12 L7 18 L9 17 L6 11 L11 11 Z" fill="#eaf0ff" stroke="#0a1226" stroke-width="1"/>
+                </g>
+                <rect x="265" y="294" width="30" height="24" fill="#0c1428"/>
+                <rect x="228" y="318" width="104" height="9" rx="4.5" fill="#0c1428"/>
+              </g>
+              <g class="scene-deploy">
+                <rect x="196" y="344" width="168" height="34" rx="17" fill="#0c1428" stroke="rgba(120,160,255,.3)"/>
+                <clipPath id="clipBar"><rect x="206" y="358" width="120" height="7" rx="3.5"/></clipPath>
+                <rect x="206" y="358" width="120" height="7" rx="3.5" fill="#16233f"/>
+                <rect class="scene-bar" x="206" y="358" width="120" height="7" rx="3.5" fill="url(#gCyan)" clip-path="url(#clipBar)"/>
+                <text x="206" y="354" class="scene-mini">publicando site</text>
+                <path class="scene-check" d="M336 361 l5 5 l9 -11" fill="none" stroke="#28c840" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g class="scene-float f1"><rect x="410" y="92" width="66" height="36" rx="10" fill="#0f1a30" stroke="rgba(55,230,255,.5)"/><text x="424" y="115" class="scene-tag">&lt;/&gt;</text></g>
+              <g class="scene-float f2"><rect x="82" y="150" width="78" height="36" rx="10" fill="#0f1a30" stroke="rgba(47,123,255,.5)"/><text x="95" y="173" class="scene-tag">React</text></g>
+            </svg>
+          </div>
+          <div class="chip chip--a">deploy <span class="chip__ok">✓</span></div>
+          <div class="chip chip--b">cliente #12</div>
+        </div>
+      </div>
+      <a href="#curso" class="scroll-hint" aria-hidden="true"><span></span></a>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack">
+        <div class="marquee__group">
+          <span>FIGMA</span><i>◇</i><span>WORDPRESS</span><i>◇</i><span>HTML</span><i>◇</i><span>CSS</span><i>◇</i><span>JAVASCRIPT</span><i>◇</i><span>REACT</span><i>◇</i><span>GITHUB</span><i>◇</i><span>VENDAS</span><i>◇</i>
+          <span>FIGMA</span><i>◇</i><span>WORDPRESS</span><i>◇</i><span>HTML</span><i>◇</i><span>CSS</span><i>◇</i><span>JAVASCRIPT</span><i>◇</i><span>REACT</span><i>◇</i><span>GITHUB</span><i>◇</i><span>VENDAS</span><i>◇</i>
+        </div>
+        <div class="marquee__group">
+          <span>FIGMA</span><i>◇</i><span>WORDPRESS</span><i>◇</i><span>HTML</span><i>◇</i><span>CSS</span><i>◇</i><span>JAVASCRIPT</span><i>◇</i><span>REACT</span><i>◇</i><span>GITHUB</span><i>◇</i><span>VENDAS</span><i>◇</i>
+          <span>FIGMA</span><i>◇</i><span>WORDPRESS</span><i>◇</i><span>HTML</span><i>◇</i><span>CSS</span><i>◇</i><span>JAVASCRIPT</span><i>◇</i><span>REACT</span><i>◇</i><span>GITHUB</span><i>◇</i><span>VENDAS</span><i>◇</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= QUEM SOMOS / CURSO ================= -->
+    <section class="section" id="curso">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Quem é</span>
+          <h2 class="sec-title" data-chars>O curso O Rei dos Sites</h2>
+          <p class="sec-desc">
+            Com o <strong>Herbert Carnaúba</strong>, alguém que vive o que ensina.
+            O Rei dos Sites reúne, em um só lugar, tudo o que você precisa para
+            criar sites profissionais do zero e transformar isso em uma renda
+            real — mesmo começando sem nenhuma experiência.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3>Do zero ao Pro</h3>
+            <p>Comece sem saber nada e evolua até criar sites completos com Figma,
+               WordPress, HTML, CSS, JavaScript e React.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/>
+              </svg>
+            </div>
+            <h3>Renda trabalhando de casa</h3>
+            <p>Aprenda estratégias de venda para conseguir clientes e faturar
+               criando sites, no seu tempo e do seu jeito.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2l2.4 6.8H21l-5.3 4 2 6.8L12 15.6 6.3 19.6l2-6.8L3 8.8h6.6L12 2Z"/>
+              </svg>
+            </div>
+            <h3>Suporte exclusivo do Rei</h3>
+            <p>Acompanhamento e dicas de mercado para você não travar e sair
+               da teoria para os primeiros resultados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= O QUE VOCÊ VAI APRENDER (MÓDULOS) ================= -->
+    <section class="section" id="aprender">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Conteúdo</span>
+          <h2 class="sec-title" data-chars>Os 7 módulos do curso</h2>
+          <p class="sec-desc">Cada módulo é um curso completo por si só. Juntos,
+             te levam do primeiro clique ao primeiro cliente.</p>
+        </div>
+
+        <div class="modules modules--flex">
+          <article class="module reveal">
+            <span class="module__no">01</span>
+            <h3>Design com Figma</h3>
+            <p>Crie layouts e protótipos profissionais antes de colocar a mão no código.</p>
+            <div class="module__foot"><span class="module__price">R$419</span><div class="module__tags"><span>Figma</span><span>UI</span></div></div>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__no">02</span>
+            <h3>WordPress</h3>
+            <p>Monte sites e lojas completos de forma rápida, mesmo sem programar.</p>
+            <div class="module__foot"><span class="module__price">R$719</span><div class="module__tags"><span>Sites</span><span>No-code</span></div></div>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__no">03</span>
+            <h3>Estratégias de Venda</h3>
+            <p>Como encontrar clientes, precificar e fechar projetos de site.</p>
+            <div class="module__foot"><span class="module__price">R$319</span><div class="module__tags"><span>Vendas</span><span>Clientes</span></div></div>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__no">04</span>
+            <h3>Programação do Zero ao Pro</h3>
+            <p>A base da lógica de programação para você evoluir com segurança.</p>
+            <div class="module__foot"><span class="module__price">R$319</span><div class="module__tags"><span>Lógica</span><span>Base</span></div></div>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__no">05</span>
+            <h3>HTML, CSS e JavaScript</h3>
+            <p>O tripé do desenvolvimento web para criar qualquer site do zero.</p>
+            <div class="module__foot"><span class="module__price">R$349</span><div class="module__tags"><span>Front-end</span></div></div>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__no">06</span>
+            <h3>GitHub</h3>
+            <p>Versione e publique seus projetos como um profissional de verdade.</p>
+            <div class="module__foot"><span class="module__price">R$219</span><div class="module__tags"><span>Git</span><span>Deploy</span></div></div>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__no">07</span>
+            <h3>React</h3>
+            <p>Interfaces modernas e dinâmicas com React e Next.js.</p>
+            <div class="module__foot"><span class="module__price">R$289</span><div class="module__tags"><span>React</span><span>Next.js</span></div></div>
+          </article>
+        </div>
+
+        <article class="module module--banner reveal">
+          <div class="module__banner-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Tudo isso somaria mais de R$2.600 em cursos separados</h3>
+            <p>No Rei dos Sites você leva os 7 módulos juntos, com acesso vitalício,
+               por uma fração desse valor.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= PARA QUEM É ================= -->
+    <section class="section" id="paraquem">
+      <div class="container">
+        <div class="split">
+          <div class="split__col reveal">
+            <span class="eyebrow">Para quem é</span>
+            <h2 class="sec-title">Feito pra você que…</h2>
+            <ul class="check">
+              <li>Quer <strong>mudar de vida</strong> criando sites de casa.</li>
+              <li>Está <strong>começando do zero</strong> e quer um caminho claro.</li>
+              <li>Busca uma <strong>renda extra</strong> ou uma nova profissão.</li>
+              <li>Já programa um pouco e quer <strong>evoluir e vender mais</strong>.</li>
+              <li>Quer aprender a <strong>conseguir clientes</strong>, não só a técnica.</li>
+            </ul>
+          </div>
+          <div class="split__col reveal">
+            <span class="eyebrow eyebrow--muted">Não é pra você que…</span>
+            <h2 class="sec-title sec-title--muted">Talvez não seja se…</h2>
+            <ul class="cross">
+              <li>Procura dinheiro fácil sem colocar a mão na massa.</li>
+              <li>Não pretende praticar nem aplicar o que aprender.</li>
+              <li>Quer só teoria, sem foco em resultado e em vender.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INSTRUTOR ================= -->
+    <section class="section" id="instrutor">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Instrutor</span>
+          <h2 class="sec-title" data-chars>Quem vai te ensinar</h2>
+        </div>
+
+        <div class="instructor instructor--solo reveal tilt" data-tilt>
+          <div class="instructor__photo">
+            <img src="img/herbert.jpg" alt="Foto de Herbert Carnaúba" loading="lazy" />
+            <div class="instructor__ring"></div>
+          </div>
+          <div class="instructor__body">
+            <h3>Herbert Carnaúba</h3>
+            <span class="instructor__role">Criador do O Rei dos Sites</span>
+            <p>
+              Herbert vive o que ensina: cria sites e gera renda com isso no dia a
+              dia. No curso, ele mostra o passo a passo real — do design à
+              programação, da publicação à venda — para você aprender a criar
+              sites profissionais e transformar essa habilidade em dinheiro.
+            </p>
+            <a class="ig" href="https://www.herbertcarnauba.com.br/curso" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.06.42 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.42 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.06.37-2.23.42-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.42a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.17-.42-.37-1.06-.42-2.23C2.21 15.58 2.2 15.2 2.2 12s0-3.58.07-4.85c.05-1.17.25-1.8.42-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.06-.37 2.23-.42C8.42 2.21 8.8 2.2 12 2.2Zm0 3.2A6.6 6.6 0 1 0 18.6 12 6.6 6.6 0 0 0 12 5.4Zm0 10.9A4.3 4.3 0 1 1 16.3 12 4.3 4.3 0 0 1 12 16.3Zm6.85-11.2a1.54 1.54 0 1 1-1.54-1.54 1.54 1.54 0 0 1 1.54 1.54Z"/></svg>
+              Conhecer o Herbert
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OFERTA / CHECKOUT ================= -->
+    <section class="section section--offer" id="oferta">
+      <div class="container">
+        <div class="offer reveal">
+          <div class="offer__glow"></div>
+          <span class="eyebrow">A oferta</span>
+          <h2 class="sec-title">Acesso completo ao O Rei dos Sites</h2>
+          <p class="offer__desc">Os 7 módulos, os bônus e o suporte — para você
+             sair do zero e criar sites que geram renda.</p>
+
+          <ul class="offer__list">
+            <li>Os 7 módulos completos (Figma, WordPress, HTML, CSS, JS, React, GitHub)</li>
+            <li>Estratégias de venda para conseguir clientes</li>
+            <li>Bônus de mercado de trabalho + dicas exclusivas</li>
+            <li>Suporte exclusivo do Rei</li>
+            <li>Acesso vitalício, no seu ritmo</li>
+          </ul>
+
+          <div class="offer__price">
+            <span class="offer__from">de <s>R$ 2.633</s> por apenas</span>
+            <div class="offer__now">
+              <span class="offer__value">R$ 197<small>,00</small></span>
+            </div>
+            <span class="offer__cash">no cartão, débito ou PIX <!-- PLACEHOLDER: confirme o valor/planos --></span>
+          </div>
+
+          <a href="https://www.herbertcarnauba.com.br/curso" class="btn btn--primary btn--lg btn--block" target="_blank" rel="noopener">
+            Quero garantir minha vaga
+            <span class="btn__glow"></span>
+          </a>
+          <p class="offer__safe">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="10.5" width="16" height="10" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/>
+            </svg>
+            Experimente por 7 dias • reembolso de 100% se não gostar
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Dúvidas</span>
+          <h2 class="sec-title" data-chars>Perguntas frequentes</h2>
+        </div>
+
+        <div class="faq">
+          <details class="faq__item reveal">
+            <summary>Preciso saber programar para começar?</summary>
+            <p>Não. O curso foi feito para iniciantes: você começa do zero, do Figma
+               à programação, e evolui passo a passo.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Como faço para me inscrever?</summary>
+            <p>É só clicar em um dos botões de inscrição e concluir sua compra por
+               cartão de crédito, débito ou PIX.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Posso cancelar quando quiser?</summary>
+            <p>Sim, você pode cancelar a qualquer momento, sem burocracia.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Existe garantia?</summary>
+            <p>Sim. Você experimenta por 7 dias e, se não gostar, tem reembolso
+               integral de 100%.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Por quanto tempo tenho acesso?</summary>
+            <p>O acesso é vitalício: você estuda no seu ritmo e revê quando quiser.</p>
+          </details>
+        </div>
+
+        <div class="faq__cta reveal">
+          <a href="https://www.herbertcarnauba.com.br/curso" class="btn btn--primary btn--lg" target="_blank" rel="noopener">Quero aprender com o Rei</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--crown">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 8l4 4 5-7 5 7 4-4-1.5 11h-15L3 8Z"/><rect x="6" y="20" width="12" height="2.4" rx="1"/></svg>
+        </span>
+        <span class="brand__text">O REI<span class="brand__accent">DOS</span>SITES</span>
+      </div>
+      <nav class="footer__social">
+        <a href="https://www.herbertcarnauba.com.br/curso" target="_blank" rel="noopener">Site oficial</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> O Rei dos Sites — Herbert Carnaúba. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>
